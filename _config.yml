@@ -25,6 +25,9 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: sebastianmantilla
 linked_in_shortURL: sebastianmantillabeniers
 
+# Site settings...
+site.google_analytics: UA-73620129-4
+
 # Build settings
 markdown: kramdown
 theme: minima
