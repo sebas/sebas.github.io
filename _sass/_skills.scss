@@ -1,0 +1,40 @@
+main.site-skills {
+  header#skills-header {
+    @extend %header-style;
+  }
+  div.d-flex {
+    margin: 1em 0;
+    text-align: center;
+    header {
+      @extend %sub-title-style;
+      font-weight: 800;
+    }
+    article {
+      margin: 0.3em;
+      padding: 0.4em;
+      border-radius: 1em;
+      background-color: white;
+      p {
+        margin: 0 0 0.5em;
+        font-family: $label-font;
+        font-weight: 800;
+        font-size: 0.9em;
+      }
+      img {
+        @extend %skill-img;
+      }
+    }
+    section.languages article {
+      @include stylise-border(1.7px, #f5c6cb);
+    }
+    section.frameworks article {
+      @include stylise-border(1.7px, #b8daff);
+    }
+    section.databases article {
+      @include stylise-border(1.7px, #c3e6cb);
+    }
+    section.testing article {
+      @include stylise-border(1.7px, #c6c8ca);
+    }
+  }
+}
