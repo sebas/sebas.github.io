@@ -28,6 +28,9 @@ linked_in_shortURL: sebastianmantillabeniers
 # Site settings...
 site.google_analytics: UA-73620129-4
 
+# Jekyll
+jekyll.environment: 'production'
+
 # Build settings
 markdown: kramdown
 theme: minima
