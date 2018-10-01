@@ -1,6 +1,8 @@
+
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,800');
 $label-font: 'Nunito',
 sans-serif;
+
 %title-style {
   text-transform: uppercase;
   font-family: $label-font;
@@ -11,6 +13,7 @@ sans-serif;
 %header-style {
   @extend %title-style;
   text-align: center;
+
   i {
     margin-right: 0.3em;
   }
@@ -25,6 +28,7 @@ sans-serif;
 $para-font: 'Bitter',
 georgia,
 serif;
+
 %para-style {
   font-family: $para-font;
   font-size: 0.9em;
@@ -42,6 +46,16 @@ serif;
   clear: both;
   height: $thickness;
   background: #c66;
+  display: block;
+  border-radius: 0.25em;
+}
+
+@mixin hr-blackline($thickness) {
+  padding: 0;
+  border: 0;
+  clear: both;
+  height: $thickness;
+  background: #000;
   display: block;
   border-radius: 0.25em;
 }
@@ -67,3 +81,60 @@ $facepic-length: 277px;
 $btn-color: rgb(177, 89, 89);
 $timeline-color: #555151;
 $exp-top-bott-margin: 1em 0;
+
+
+/*
+ * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ * https://css-tricks.com/international-box-sizing-awareness-day/
+ * Do not modify these two selectors, please
+ */
+
+ html {
+  box-sizing: border-box;
+  background-color: $background-colour;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/*
+ * Global layout stuff
+ */
+
+body {
+  /* default background colour is white. remove it */
+  background: none;
+  color: #3B3B3B;
+}
+
+div.home {
+  margin: 55px auto 60px;
+}
+
+// horizontal line in 'about' section
+hr.red-line {
+  @include hr-redline(0.1em);
+}
+
+hr.black-line {
+  @include hr-blackline(0.1em);
+}
+
+// section divider
+hr.section-divider {
+  @include hr-blackline(1em);
+}
+
+// there is too much padding on ul. reduce it to 10px
+ul {
+  padding-left: 10px;
+}
+
+@media (max-width: 575px) {
+  ul {
+    padding-left: 0px;
+  }
+}
