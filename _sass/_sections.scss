@@ -153,6 +153,9 @@ main.site-skills {
     section.os article {
       @include stylise-border(1.7px, #226491);
     }
+    section.iaas article {
+      @include stylise-border(1.7px, #226491);
+    }
     section.languages article {
       @include stylise-border(1.7px, #f5c6cb);
     }
