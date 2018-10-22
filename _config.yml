@@ -28,6 +28,18 @@ linkedin_username: sebastianmantillabeniers
 # Site settings...
 google_analytics: UA-73620129-4
 
+#Education is required
+education:
+ - level: Boot Camp
+   date: 2018
+   subject: Web Development
+   school: Lighthouse Labs Vancouver
+   
+ - level: Bachelor of Science (B.Sc.)
+   date: 1989 - 1993
+   subject: Computer engineering
+   school: National Autonomous University of Mexico, Mexico city
+
 # Jekyll
 # jekyll.environment: 'production'
 

@@ -7,5 +7,4 @@ layout: home
   {% include skills.html %}
   {% include experience.html %}
   {% include education2.html %}
-  {% include education.html %}
 </div>

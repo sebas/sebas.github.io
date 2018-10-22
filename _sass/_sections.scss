@@ -81,6 +81,7 @@ main.site-experience {
 }
 
 main.site-education {
+  margin-right: 40px;
   header#education-header {
     @extend %header-style;
   }
@@ -100,7 +101,7 @@ main.site-education {
     }
     section.edu-description {
       margin: $exp-top-bott-margin;
-      @extend %para-style;
+      @extend %sub-title-style;
       span.badge{
         font-size: 15px;
         margin: 1px 1px 1px 0;
